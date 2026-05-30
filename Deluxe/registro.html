@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Deluxe Boutique</title>
+</head>
+<body>
+    <!--MENÚ SUPERIOR NAVEGACIÓN-->
+    <div class="container-fluid">
+        <header> 
+            <div class="row" id="contenedor_navegacion">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-1">
+                    <img src="img/logoDeluxe.png" alt="logoDeluxe" style="height: 70px; width: 220px;">                
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 p-3">
+                    <nav class="nav justify-content-end">  
+                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#">Nuestros Productos</a>
+                        <a class="nav-link" href="#">Inicia Sesión</a>
+                        <div class="icono_carrito" id="boton_carrito">
+                            <img style="width: 50px; height: 50px" src="img/carrito.png" alt="imagen">
+                            <div class="contador_carrito" id="contador_carrito">
+                                <span>0</span>
+                            </div>
+                        </div> 
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!--HOME: PORTADA CON IMÁGENES CARRUSEL-->
+        <main>
+            <div id="caruselHome" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="img/portada1.jpg" class="d-block w-100" alt="portada1">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="img/portada2.jpg" class="d-block w-100" alt="portada2">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="img/portada3.jpg" class="d-block w-100" alt="portada3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#caruselHome" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#caruselHome" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!--LISTADO CARRITO DE COMPRAS-->
+                <div id="panel_carrito">
+                    <ul id="listado_carrito" class="listado_carrito"></ul>
+                    <div id="total_carrito" class="total_carrito">
+                        <span class="total">Total $</span><span class="precio_total">0</span>
+                    </div>
+                </div>
+            </div>
+            
+        
+
+        <!--CATÁLOGO PRODUCTOS-->
+            <div id="container_productos" class="row text-center p-5">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pb-3"><h2>Nuestros Productos</h2></div>
+                <!--PRODUCTO 1: VESTIDO ROJO-->
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="tarjeta card">
+                        <img src="img/vestido_rojo_carmesi.jpg" class="card-img-top img-thumbnail" alt="vestido rojo">
+                        <div class="card-body">
+                        <h5 class="card-title nombre">Vestido rojo</h5>
+                        <p class="card-text precio"><span>$</span>25990</p>
+                        <a href="#" class=" boton btn text-white" style="background-color: #6c0818;">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PRODUCTO 2: JEANS-->
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="tarjeta card">
+                        <img src="img/jeans_basicos.png" class="card-img-top img-thumbnail" alt="jeans">
+                        <div class="card-body">
+                        <h5 class="card-title nombre">Jeans básicos</h5>
+                        <p class="card-text precio"><span>$</span>13990</p>
+                        <a href="#" class=" boton btn text-white" style="background-color: #6c0818;">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PRODUCTO 3: VESTIDO AMARILLO-->
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="tarjeta card">
+                        <img src="img/vestido_amarrillo.jpg" class="card-img-top img-thumbnail" alt="vestido amarillo">
+                        <div class="card-body">
+                        <h5 class="card-title nombre ">Vestido amarillo</h5>
+                        <p class="card-text precio"><span>$</span>17990</p>
+                        <a href="#" class=" boton btn text-white" style="background-color: #6c0818;">Comprar</a>
+                    </div>
+                </div>
+            </div> 
+            <!--REGISTRO DE CUENTA-->  
+            <section class="container">
+                <div class="row w-100 h-100 m-0">
+                    <div class=" container_form col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <form class="registro  w-100 text-center"> 
+                            <h2>Registrarse</h2>
+                            <div class="social_networks">
+                                <ion-icon name="logo-twitch"></ion-icon>
+                                <ion-icon name="logo-twitter"></ion-icon>
+                                <ion-icon name="logo-instagram"></ion-icon>
+                                <ion-icon name="logo-tiktok"></ion-icon>
+                            </div>
+                            <span>Use su correo electrónico para registrase</span>
+                            <div class="container_input">
+                            <ion-icon name="person-outline"></ion-icon>
+                                <input class="nombre" type="text" placeholder="Nombre" >
+                            </div>
+                            <div class="container_input">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <input class="email" type="text" placeholder="Email" >
+                            </div>
+                            <div class="container_input">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <input class="contraseña" type="password" placeholder="Password" >
+                            </div>
+                            <button class="boton_social" type="submit">REGISTRARSE</button>
+                        </form>
+                    </div>
+                </div>
+            </section>     
+        </main>
+        
+        <!--PIE DE PÁGINA-->
+        <footer>
+            <div class="row text-center text-white pt-3 pb-3 mt-3" style="background-color:#4d7ea8">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    &copy;2026 Deluxe - Todos los derechos reservados
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="jscarrito/carrito.js" ></script>
+    <script src="jscarrito/auth.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+</body>
+</html>

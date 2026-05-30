@@ -1,0 +1,233 @@
+/* Quitar estilos por defecto de la lista */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+}
+
+.listado_carrito {
+  top: 10px;
+  right: 10px;
+  z-index: 10; /*Se asegura que aparezca por encima de las imágenes de portada*/
+  max-width: 320px;
+  width: 90%;
+  overflow: hidden;
+  background-color: rgb(224, 221, 221);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info_carrito{
+  width: auto;
+  height: 100px;
+  display: flex;
+}
+
+.foto_carrito {
+  width: 100px;
+  height: 80%;
+  display: block;
+  margin: auto;
+    
+}
+
+.foto_carrito img{
+  width: 100%;
+  height: 100%;
+  padding-top: 3px;
+  object-fit: contain;
+  border-radius: 30px;
+}
+
+.titulo_carrito{
+  width: 270px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.articulo{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(14, 13, 13);
+}
+
+.precio{
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(15, 15, 15);
+}
+
+.cantidad{
+  font-size: 15px;
+  width: 45px;
+  padding: 3px;
+
+}
+
+.quitar_articulo{
+  width: 40px;
+  min-height: 40px;
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin: auto;
+}
+
+.quitar_articulo img{
+  position: relative;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.quitar_articulo img:hover{
+  background-color: rgba(251, 13, 13, 0.982);
+}
+
+.total_carrito { 
+  right: 10px;          
+  z-index: 10; /*Se asegura que aparezca por encima de las imágenes de portada*/
+  display: flex;
+  justify-content: flex-end;  /* empuja el contenido a la derecha */
+  text-align: center;
+  padding: 5px 10px;
+  background-color: rgb(224, 221, 221);
+  color: rgb(0, 0, 0);
+  padding-right: 10px; /* espacio desde el borde derecho */
+  border-radius: 0 0 10px 10px;   /* redondea solo las esquinas inferiores */
+  max-width: 320px;
+  width: 90%;
+  top: auto;
+}
+
+.icono_carrito {
+  position: relative;
+  display: inline-block;
+}
+
+.contador_carrito {
+  position: absolute;
+  top: -8px;      /* ajusta para subir o bajar */
+  right: -3px;    /* ajusta para mover izquierda o derecha */
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  min-height: 500px;       /* Mantiene la altura visual deseada */
+  padding: 15px;           /* Más espacio para pantallas móviles */
+  box-sizing: border-box;  
+  
+}
+
+/* Estilo opcional para separar los formularios en móviles */
+.container_form {
+  padding: 20px;
+  overflow:hidden ;
+  
+}
+
+.container_form h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.social_networks ion-icon{
+  padding: 8px;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.container_form span{
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.container_input{
+  margin-bottom: 10px;
+  display:  flex;
+  justify-content: center;
+  align-items:  center;
+  gap:8px;
+  padding:  0 15px;
+  background-color: #EEEEEE;
+}
+
+.container_input input{
+  border:  none;
+  outline: none;
+  width:100%;
+  height: 100%;
+  background-color: inherit;
+
+}
+.container_form a{
+  color: black;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.boton_social{
+
+  width:170px;
+  height: 45px;
+  font-family: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: rgb(80, 191, 247);
+  color: white;
+}
+h2 {
+  font-family: Georgia, serif;
+}
+
+footer{
+  font-family: Georgia, serif;
+}
+
+#container_productos {
+  font-family: Georgia, serif;
+}
+
+#listado_carrito {
+  font-family: Georgia, serif;
+}
+
+#total_carrito{
+  font-family: Georgia, serif;
+}
+
+#caruselHome {
+  position: relative;
+}
+
+#panel_carrito {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  width: 320px;
+}
